@@ -1,10 +1,11 @@
-const { GraphQLObjectType, GraphQLString, GraphQLSchema, GraphQLID, GraphQLInt } = require("graphql");
+const { GraphQLObjectType, GraphQLString, GraphQLSchema, GraphQLID, GraphQLInt, GraphQLList } = require("graphql");
 
 const movies = [
   { id: "1", name: "1984", genre: "Sci-Fi", directorId: "1" },
   { id: "2", name: "V", genre: "Sci-Fi-Thriller", directorId: "2" },
   { id: "3", name: "Snatch", genre: "Comedy", directorId: "3" },
   { id: "4", name: "One Out", genre: "Anime", directorId: "4" },
+  { id: "5", name: "One Out 2", genre: "Anime", directorId: "4" },
 ]
 
 const directors = [
@@ -23,7 +24,7 @@ const MovieType = new GraphQLObjectType({
     director: {
       type: DirectorType,
       resolve(parent, args) {
-        return directors.find(director => director.id == parent.id)
+        return directors.find(director => director.id === parent.id)
       }
     }
   })
@@ -34,8 +35,13 @@ const DirectorType = new GraphQLObjectType({
   fields: () => ({
     id: { type: GraphQLID },
     name: { type: GraphQLString },
-    age: { type: GraphQLInt }
-
+    age: { type: GraphQLInt },
+    movies: {
+      type: new GraphQLList(MovieType ),
+      resolve(parent, args) {
+        return movies.filter(movie => movie.directorId === parent.id)
+      }
+    }
   })
 })
 
@@ -46,14 +52,26 @@ const Query = new GraphQLObjectType({
       type: MovieType,
       args: {id: {type: GraphQLID}},
       resolve(parent, args) {
-        return movies.find(movie => movie.id == args.id)
+        return movies.find(movie => movie.id === args.id)
       },
     },
     director: {
       type: DirectorType,
       args: { id: { type: GraphQLID }},
       resolve(parent, args) {
-        return directors.find(director => director.id == args.id)
+        return directors.find(director => director.id === args.id)
+      }
+    },
+    movies: {
+      type: new GraphQLList(MovieType),
+      resolve(parent, args) {
+        return movies;
+      }
+    },
+    directors: {
+      type: new GraphQLList(DirectorType),
+      resolve(parent, args) {
+        return directors;
       }
     }
   }
