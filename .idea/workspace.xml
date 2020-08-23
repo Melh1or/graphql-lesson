@@ -2,8 +2,37 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dc68ca61-18ab-4b74-9e10-d0043b9d42a9" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/client/src/components/Directors/Directors.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/Directors/DirectorsHoc.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/Directors/styles.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/DirectorsDialog/DirectorsDialog.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/DirectorsForm/DirectorsForm.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/DirectorsForm/DirectorsFormHoc.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/DirectorsForm/styles.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/DirectorsSearch/DirectorsSearch.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/DirectorsSearch/DirectorsSearchHoc.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/DirectorsSearch/styles.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/DirectorsTable/DirectorsTable.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/DirectorsTable/DirectorsTableHoc.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/DirectorsTable/styles.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/Movies/Movies.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/Movies/MoviesHoc.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/Movies/styles.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/MoviesDialog/MoviesDialog.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/MoviesForm/MoviesForm.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/MoviesForm/MoviesFormHoc.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/MoviesForm/styles.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/MoviesSearch/MoviesSearch.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/MoviesSearch/MoviesSearchHoc.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/MoviesSearch/styles.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/MoviesTable/MoviesTable.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/MoviesTable/MoviesTableHoc.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/MoviesTable/styles.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/Tabs/Tabs.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/Tabs/TabsHoc.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/Tabs/styles.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/theme.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/schema/schema.js" beforeDir="false" afterPath="$PROJECT_DIR$/schema/schema.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,6 +50,8 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="jsx.switch.disabled" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/client/src" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -28,8 +59,13 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
     <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/client/src" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration name="dev" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
@@ -57,7 +93,7 @@
       <option name="presentableId" value="Default" />
       <updated>1598085364681</updated>
       <workItem from="1598085366264" duration="8424000" />
-      <workItem from="1598193842134" duration="3208000" />
+      <workItem from="1598193842134" duration="5034000" />
     </task>
     <servers />
   </component>
@@ -65,29 +101,29 @@
     <option name="version" value="3" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1259" height="59" key="GridCell.Tab.0.bottom" timestamp="1598195983818">
+    <state width="1259" height="259" key="GridCell.Tab.0.bottom" timestamp="1598201941412">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="1259" height="59" key="GridCell.Tab.0.bottom/0.0.1280.800@0.0.1280.800" timestamp="1598195983818" />
-    <state width="1259" height="59" key="GridCell.Tab.0.center" timestamp="1598195983816">
+    <state width="1259" height="259" key="GridCell.Tab.0.bottom/0.0.1280.800@0.0.1280.800" timestamp="1598201941412" />
+    <state width="1259" height="259" key="GridCell.Tab.0.center" timestamp="1598201941411">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="1259" height="59" key="GridCell.Tab.0.center/0.0.1280.800@0.0.1280.800" timestamp="1598195983816" />
-    <state width="1259" height="59" key="GridCell.Tab.0.left" timestamp="1598195983815">
+    <state width="1259" height="259" key="GridCell.Tab.0.center/0.0.1280.800@0.0.1280.800" timestamp="1598201941411" />
+    <state width="1259" height="259" key="GridCell.Tab.0.left" timestamp="1598201941410">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="1259" height="59" key="GridCell.Tab.0.left/0.0.1280.800@0.0.1280.800" timestamp="1598195983815" />
-    <state width="1259" height="59" key="GridCell.Tab.0.right" timestamp="1598195983817">
+    <state width="1259" height="259" key="GridCell.Tab.0.left/0.0.1280.800@0.0.1280.800" timestamp="1598201941410" />
+    <state width="1259" height="259" key="GridCell.Tab.0.right" timestamp="1598201941411">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="1259" height="59" key="GridCell.Tab.0.right/0.0.1280.800@0.0.1280.800" timestamp="1598195983817" />
-    <state x="141" y="39" key="SettingsEditor" timestamp="1598201920003">
+    <state width="1259" height="259" key="GridCell.Tab.0.right/0.0.1280.800@0.0.1280.800" timestamp="1598201941411" />
+    <state x="141" y="39" key="SettingsEditor" timestamp="1598202184520">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state x="141" y="39" key="SettingsEditor/0.0.1280.800@0.0.1280.800" timestamp="1598201920002" />
-    <state x="305" y="124" width="670" height="676" key="search.everywhere.popup" timestamp="1598201906287">
+    <state x="141" y="39" key="SettingsEditor/0.0.1280.800@0.0.1280.800" timestamp="1598202184520" />
+    <state x="305" y="124" width="670" height="676" key="search.everywhere.popup" timestamp="1598202157734">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state x="305" y="124" width="670" height="676" key="search.everywhere.popup/0.0.1280.800@0.0.1280.800" timestamp="1598201906287" />
+    <state x="305" y="124" width="670" height="676" key="search.everywhere.popup/0.0.1280.800@0.0.1280.800" timestamp="1598202157734" />
   </component>
 </project>
