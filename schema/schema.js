@@ -89,9 +89,9 @@ const Mutation = new GraphQLObjectType({
     addMovie: {
       type: MovieType,
       args: {
-        name: { type: GraphQLString},
+        name: { type: new GraphQLNonNull(GraphQLString) },
         genre: { type: new GraphQLNonNull(GraphQLString) },
-        directorId: { type: new GraphQLNonNull(GraphQLID) },
+        directorId: { type: GraphQLID },
         watched: { type: new GraphQLNonNull(GraphQLBoolean) },
         rate: { type: GraphQLInt },
       },
