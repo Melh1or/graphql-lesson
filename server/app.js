@@ -9,7 +9,6 @@ mongoose.connect(
   { useNewUrlParser: true, useUnifiedTopology: true  }
 )
 
-
 const app = express();
 app.use("/graphql", graphqlHTTP({
   schema,
@@ -17,8 +16,8 @@ app.use("/graphql", graphqlHTTP({
 }));
 
 const dbConnection = mongoose.connection;
-dbConnection.on("err", (err) => console.log("error: ", err))
-dbConnection.once("open", () => console.log("Db connected"))
+dbConnection.on("err", (err) => console.log("error: ", err));
+dbConnection.once("open", () => console.log("Db connected"));
 
 const PORT = process.env.PORT || 3010;
 app.listen(PORT, (err) => {
