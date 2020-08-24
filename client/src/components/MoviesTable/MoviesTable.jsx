@@ -58,7 +58,7 @@ class MoviesTable extends React.Component {
     const { classes, data = {} } = this.props;
     
     const { movies = [] } = data;
-    console.log(this.props);
+    
     return (
       <>
         <MoviesDialog open={openDialog} handleClose={this.handleDialogClose} id={activeElem.id} />
